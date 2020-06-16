@@ -27,11 +27,12 @@ def initiateBoard(side):
 print("Jouez-vous les blancs ou les noirs ? (Réponses valides: 'blancs', 'noirs', 'white', 'black')")
 side = input()
 
-while (side != "white" or side != "blancs" or side != "w" or side != "blanc" or side != "black" or side != "noir" or side != "noirs"):
-    print("Saisie invalide.\nJouez-vous les blancs ou les noirs ? (Réponses valides: 'blancs', 'noirs', 'white', 'black')")
-    side = input()
-    if side == "white" or side == "blancs" or side == "w" or side == "blanc" or side == "black" or side == "noir" or side == "noirs":
-        break
+if (side != "white" and side != "blancs" and side != "w" and side != "blanc" and side != "black" and side != "noir" and side != "noirs"):
+    while True:
+        print("Saisie invalide. Jouez-vous les blancs ou les noirs ? (Réponses valides: 'blancs', 'noirs', 'white', 'black')")
+        side = input()
+        if (side == "white" or side == "blancs" or side == "w" or side == "blanc" or side == "black" or side == "noir" or side == "noirs"):
+            break
 
 if side == "white" or side == "blancs" or side == "w" or side == "blanc":
     initiateBoard("white")
