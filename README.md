@@ -1,4 +1,4 @@
-# python
+# Python-scrap
 
 Scrap (abandonned) projects written in Python at my very beginnings
 
